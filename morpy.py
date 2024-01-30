@@ -117,20 +117,20 @@ def draw():
             pyxel.blt(case.x_window, case.y_window, 0, 16, 0, 16, 16, 0)
             
     if victoire == True :
-        pyxel.rect(2, 24, 45, 24, 13)
-        pyxel.text(6, 27, "Le guh " + str(tour), 11)
+        pyxel.rect(2, 24, 46, 25, 13)
+        pyxel.text(5, 27, "Le joueur " + str(tour), 11)
         pyxel.text(10, 33, "a gagne !", 11)
-        pyxel.text(4, 25, "Le joueur " + str(tour), 3)
+        pyxel.text(4, 26, "Le joueur " + str(tour), 3)
         pyxel.text(9, 32, "a gagne !", 3)
 
         
     if egalite == True :
-        pyxel.rect(6, 24, 39, 24, 13)
-        pyxel.text(9, 27, "Egalite !", 2)
-        pyxel.text(8, 26, "Egalite !", 1)
+        pyxel.rect(5, 27, 40, 24, 13)
+        pyxel.text(9, 30, "Egalite !", 2)
+        pyxel.text(8, 31, "Egalite !", 1)
         
     if victoire == True or egalite == True:
-        pyxel.blt(21, 38, 0, 32, 8, 8, 8, 0)
+        pyxel.blt(21, 40, 0, 32, 8, 8, 8, 0)
     
                     
 def update():
@@ -150,7 +150,7 @@ def update():
                        tour = 1
 
                 
-    if (pyxel.mouse_x >= 21 and pyxel.mouse_x <= 28 and pyxel.mouse_y >= 38 and pyxel.mouse_y <= 46 and pyxel.btnr(pyxel.MOUSE_BUTTON_LEFT) )and (victoire == True or egalite == True):
+    if (pyxel.mouse_x >= 21 and pyxel.mouse_x <= 28 and pyxel.mouse_y >= 40 and pyxel.mouse_y <= 47 and pyxel.btnr(pyxel.MOUSE_BUTTON_LEFT) )and (victoire == True or egalite == True):
         tour = 1
         for case in grille:
             case.attribution_case(0)
