@@ -118,7 +118,7 @@ def draw():
             
     if victoire == True :
         pyxel.rect(2, 24, 45, 24, 13)
-        pyxel.text(6, 27, "Le joueur " + str(tour), 11)
+        pyxel.text(6, 27, "Le guh " + str(tour), 11)
         pyxel.text(10, 33, "a gagne !", 11)
         pyxel.text(4, 25, "Le joueur " + str(tour), 3)
         pyxel.text(9, 32, "a gagne !", 3)
