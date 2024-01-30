@@ -117,11 +117,11 @@ def draw():
             pyxel.blt(case.x_window, case.y_window, 0, 16, 0, 16, 16, 0)
             
     if victoire == True :
-        pyxel.rect(3, 24, 46, 24, 13)
+        pyxel.rect(2, 24, 45, 24, 13)
         pyxel.text(6, 27, "Le joueur " + str(tour), 11)
-        pyxel.text(11, 33, "a gagne !", 11)
-        pyxel.text(5, 26, "Le joueur " + str(tour), 3)
-        pyxel.text(10, 32, "a gagne !", 3)
+        pyxel.text(10, 33, "a gagne !", 11)
+        pyxel.text(4, 25, "Le joueur " + str(tour), 3)
+        pyxel.text(9, 32, "a gagne !", 3)
 
         
     if egalite == True :
